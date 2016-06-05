@@ -1,0 +1,57 @@
+#include "aegis_ace_settings.hpp"
+
+class cfgMusic
+{
+	tracks[]={};
+
+	class track1
+	{
+		name="little";
+		sound[] = {little.ogg, db+9, 1.0};
+	};
+};
+
+class cfgSound
+{
+	tracks[]={};
+
+	class sound1
+	{
+		name="buzina";
+		sound[] = {buzina.ogg, db+10, 1.0};
+	};
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Missão Cumprida";
+		subtitle = "Resgate efetuado!";
+		description = "A equipe AEGIS resgatou Tatamovich com vida.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+  class loser
+  {
+		title = "A Missão Falhou";
+		subtitle = "Todo o grupo AEGIS morreu";
+		description = "Mesmo retornando fogo e lutando bravamente, o grupo AEGIS pereceu em campo de batalha.";
+		pictureBackground = "";
+		picture = "KIA";
+		pictureColor[] = {0.6,0.1,0.2,1};
+	};
+
+  class vip_fail
+  {
+    title = "A Missão Falhou";
+    subtitle = "Evgeni Tatamovich morreu";
+    description = "Com a morte de seu filho, Ivan Tatamovich está processando a AEGIS numa quantia milionária.";
+    pictureBackground = "";
+    picture = "KIA";
+    pictureColor[] = {0.6,0.1,0.2,1};
+  };
+
+};
